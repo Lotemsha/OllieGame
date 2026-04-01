@@ -46,8 +46,7 @@ public class PlayerController : MonoBehaviour
         {
             // תנועה ואנימציות
             Vector3 movement = new Vector3(_moveDirection.x, _moveDirection.y, 0);
-            transform.position += movement * _playerLogic.Speed * Time.deltaTime;
-
+            transform.position += movement * (_playerLogic.Speed * _speedMultiplier) * Time.deltaTime;
             float currentSpeed = _moveDirection.magnitude;
             _animator.SetFloat("Speed", currentSpeed);
 

@@ -29,7 +29,7 @@ public class SaturationController : MonoBehaviour
             // חישוב: מפה את ה-XP (0 עד 100) לסטורציה (-100 עד 0)
             // כש-XP הוא 0, הסטורציה תהיה 100- (אפור)
             // כש-XP הוא 100, הסטורציה תהיה 0 (צבעוני רגיל)
-            float newSaturation = Mathf.Lerp(-100f, 0f, xpValue / xpSlider.maxValue);
+            float newSaturation = Mathf.Lerp(-90f, 0f, xpValue / xpSlider.maxValue);
             colorAdjustments.saturation.value = newSaturation;
         }
     }
