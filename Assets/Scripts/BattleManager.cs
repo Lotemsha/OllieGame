@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
-using System.Collections; // נחוץ בשביל הדיליי בין התורות
+using System.Collections;
+using CoreClasses.Models;
 
 public class BattleManager : MonoBehaviour
 {
     // משתנים שיחזיקו את הנתונים של הדמויות
     public UnitStats playerStats;
     public UnitStats enemyStats;
+    private bool isPlayerTurn = true;
 
     [Header("Settings")]
     public float turnDelay = 1.0f; // כמה זמן לחכות בין התקפה להתקפה
@@ -13,6 +15,8 @@ public class BattleManager : MonoBehaviour
     //Attack
     public void OnPlayerAttack()
     {
+        if (!isPlayerTurn || playerStats.currentHealth <= 0) return;
+
         // 1. השחקן תוקף את האויב
         Debug.Log("Ollie attacks " + enemyStats.unitName);
         enemyStats.TakeDamage(playerStats.attackDamage);
@@ -39,7 +43,11 @@ public class BattleManager : MonoBehaviour
         Debug.Log(enemyStats.unitName + " attacks back!");
         playerStats.TakeDamage(enemyStats.attackDamage);
 
-        if (playerStats.currentHealth <= 0)
+        if (playerStats.currentHealth > 0)
+        {
+            isPlayerTurn = true; // מחזירים את התור לשחקן רק בסיום
+        }
+        else
         {
             Debug.Log("Ollie has fainted...");
         }

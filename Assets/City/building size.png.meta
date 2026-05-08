@@ -84,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 94
+  spritePixelsToUnits: 60
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -323,7 +323,7 @@ TextureImporter:
       name: building size_7
       rect:
         serializedVersion: 2
-        x: 216
+        x: 215
         y: 1
         width: 67
         height: 172
@@ -479,6 +479,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: building size_13
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 175
+        width: 10
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12ab06a32c27f9449b637215117b123
+      internalID: -972120988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -498,6 +520,7 @@ TextureImporter:
       building size_10: -2553509374285703232
       building size_11: -7040708229921042082
       building size_12: 2088335968
+      building size_13: -972120988
       building size_2: 2365526930530409238
       building size_3: -1344277248269287066
       building size_4: -6466756389494558145

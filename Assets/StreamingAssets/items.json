@@ -1,0 +1,108 @@
+[
+  {
+    "ItemID": 1,
+    "Name": "Calming Herb",
+    "Type": "Consumable",
+    "EffectValue": 2,
+    "StatName": "AnxietyRegen"
+  },
+  {
+    "ItemID": 2,
+    "Name": "Relaxing Tea",
+    "Type": "Consumable",
+    "EffectValue": 4,
+    "StatName": "AnxietyRegen"
+  },
+  {
+    "ItemID": 3,
+    "Name": "Self-Compassion Note",
+    "Type": "Consumable",
+    "EffectValue": 1,
+    "StatName": "Damage"
+  },
+  {
+    "ItemID": 4,
+    "Name": "Stress Ball",
+    "Type": "Consumable",
+    "EffectValue": 1,
+    "StatName": "Accuracy"
+  },
+  {
+    "ItemID": 5,
+    "Name": "Fidget Spinner",
+    "Type": "Consumable",
+    "EffectValue": 2,
+    "StatName": "Accuracy"
+  },
+  {
+    "ItemID": 6,
+    "Name": "Fidget Cube",
+    "Type": "Consumable",
+    "EffectValue": 3,
+    "StatName": "Accuracy"
+  },
+  {
+    "ItemID": 7,
+    "Name": "Anti-Anxiety Pill",
+    "Type": "Consumable",
+    "EffectValue": 8,
+    "StatName": "AnxietyRegen"
+  },
+  {
+    "ItemID": 8,
+    "Name": "Deep Breath Card",
+    "Type": "Consumable",
+    "EffectValue": 1,
+    "StatName": "Speed"
+  },
+  {
+    "ItemID": 9,
+    "Name": "Healing Patch",
+    "Type": "Consumable",
+    "EffectValue": 20,
+    "StatName": "MaxHealth"
+  },
+
+  {
+    "ItemID": 20,
+    "Name": "Weighted Blanket",
+    "Type": "Equipment",
+    "EffectValue": 3,
+    "StatName": "AnxietyShield"
+  },
+  {
+    "ItemID": 21,
+    "Name": "Diary",
+    "Type": "Equipment",
+    "EffectValue": 0,
+    "StatName": "None"
+  },
+  {
+    "ItemID": 22,
+    "Name": "Noise-Canceling Ears",
+    "Type": "Equipment",
+    "EffectValue": 2,
+    "StatName": "Accuracy"
+  },
+  {
+    "ItemID": 23,
+    "Name": "Book",
+    "Type": "Equipment",
+    "EffectValue": 1,
+    "StatName": "Damage"
+  },
+  {
+    "ItemID": 24,
+    "Name": "Earphone - Music",
+    "Type": "Equipment",
+    "EffectValue": 1,
+    "StatName": "AnxietyRegen"
+  },
+  {
+    "ItemID": 25,
+    "Name": "Stress Watch",
+    "Type": "Equipment",
+    "EffectValue": 0,
+    "StatName": "None"
+  }
+]

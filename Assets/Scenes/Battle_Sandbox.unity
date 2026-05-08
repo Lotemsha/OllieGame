@@ -1387,6 +1387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleManager
   playerStats: {fileID: 1678038768}
   enemyStats: {fileID: 1043365496}
+  isPlayerTurn: 1
   turnDelay: 1
 --- !u!4 &1624219587
 Transform:
@@ -1653,10 +1654,10 @@ Canvas:
   m_GameObject: {fileID: 1983954588}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0

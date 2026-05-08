@@ -1,9 +1,13 @@
-﻿using UnityEngine;
+﻿using CoreClasses.Models;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class UnitStats : MonoBehaviour
 {
     [Header("General Settings")]
+    public Enemy enemyData; 
+    public PlayerManager playerData;
+
     public string unitName;
     public float maxHealth = 100f;
     public float currentHealth;
@@ -47,6 +51,6 @@ public class UnitStats : MonoBehaviour
 
     void Die()
     {
-        Debug.Log(unitName + " הובס!");
+        Debug.Log(unitName + " Defeated!");
     }
 }

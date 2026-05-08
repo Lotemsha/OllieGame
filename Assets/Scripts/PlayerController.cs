@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 _moveDirection;
     private Animator _animator;
     public bool canMove = true;
+    private Rigidbody2D rb;
 
     [Header("State")]
     public bool isInside = false; // האם אולי בתוך הבית?
@@ -23,13 +24,30 @@ public class PlayerController : MonoBehaviour
         _playerLogic = new PlayerManager("Ollie");
         Debug.Log("Character initialized: " + _playerLogic.Name + " with " + _playerLogic.Health + " HP");
         _animator = GetComponent<Animator>();
-        
+
+        if (GameController.Instance != null && GameController.Instance.gameManager.Player != null)
+        {
+            // אנחנו לוקחים את השחקן הקיים ולא יוצרים חדש!
+            _playerLogic = GameController.Instance.gameManager.Player;
+            Debug.Log("Connected to existing Ollie from DLL! Current Health: " + _playerLogic.Health);
+        }
+        else
+        {
+            // רק אם אין שחקן (תחילת המשחק), יוצרים אחד ושומרים אותו ב-DLL
+            _playerLogic = new PlayerManager("Ollie");
+            if (GameController.Instance != null)
+            {
+                GameController.Instance.gameManager.Player = _playerLogic;
+            }
+            Debug.Log("New Ollie created and stored in DLL.");
+        }
+
         // Blinking animation
         Invoke("RandomBlink", Random.Range(2f, 6f));
 
         if (_healthSlider != null)
         {
-            _healthSlider.maxValue = _playerLogic.Health;
+            _healthSlider.maxValue = _playerLogic.MaxHealth;
             _healthSlider.value = _playerLogic.Health;
         }
     }
@@ -37,6 +55,26 @@ public class PlayerController : MonoBehaviour
     public void OnMove(InputValue value)
     {
         _moveDirection = value.Get<Vector2>();
+    }
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    void FixedUpdate() // עדיף להעביר את התנועה הפיזיקלית לכאן
+    {
+        if (canMove)
+        {
+            // חישוב המהירות
+            Vector2 targetVelocity = _moveDirection * (_playerLogic.Speed * _speedMultiplier);
+
+            // הזזה דרך ה-Rigidbody - זה מה שיגרום לה להיעצר בקירות!
+            rb.linearVelocity = targetVelocity;
+        }
+        else
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
     }
 
     // Update is called once per frame
@@ -46,7 +84,6 @@ public class PlayerController : MonoBehaviour
         {
             // תנועה ואנימציות
             Vector3 movement = new Vector3(_moveDirection.x, _moveDirection.y, 0);
-            transform.position += movement * (_playerLogic.Speed * _speedMultiplier) * Time.deltaTime;
             float currentSpeed = _moveDirection.magnitude;
             _animator.SetFloat("Speed", currentSpeed);
 

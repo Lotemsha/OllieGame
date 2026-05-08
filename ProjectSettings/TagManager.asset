@@ -44,10 +44,10 @@ TagManager:
   - name: Background
     uniqueID: 1452797791
     locked: 0
-  - name: Midground
+  - name: Buildings
     uniqueID: 1420296135
     locked: 0
-  - name: Foreground
+  - name: Player
     uniqueID: 3857852533
     locked: 0
   m_RenderingLayers:
