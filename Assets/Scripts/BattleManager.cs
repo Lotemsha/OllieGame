@@ -1,55 +1,98 @@
-﻿using UnityEngine;
+﻿using CoreClasses.Models;
 using System.Collections;
-using CoreClasses.Models;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
-    // משתנים שיחזיקו את הנתונים של הדמויות
-    public UnitStats playerStats;
-    public UnitStats enemyStats;
-    private bool isPlayerTurn = true;
+    public EnemyDataContainer enemyData;
+    public BattleUIController uiController;
+    private CombatManager _combat;
+    private PlayerManager _player;
+    private Enemy _enemy;
+    private AnxietyBar _anxietyBar;
 
-    [Header("Settings")]
-    public float turnDelay = 1.0f; // כמה זמן לחכות בין התקפה להתקפה
+    [Header("UI References")]
+    public Slider enemyHealthSlider;
+    public Slider playerHealthSlider;
+    public Slider anxietySlider;
 
-    //Attack
-    public void OnPlayerAttack()
+    void Start()
     {
-        if (!isPlayerTurn || playerStats.currentHealth <= 0) return;
+        _combat = new CombatManager();
+        _player = GameController.Instance.player;
 
-        // 1. השחקן תוקף את האויב
-        Debug.Log("Ollie attacks " + enemyStats.unitName);
-        enemyStats.TakeDamage(playerStats.attackDamage);
+        string startMessage = _combat.InitializeBattle(_player);
 
-        // 2. בדיקה: האם האויב עדיין חי?
-        if (enemyStats.currentHealth > 0)
+        _enemy = _combat.CurrentEnemy;
+
+        if (_enemy != null)
         {
-            // 3. אם כן, מחכים רגע ואז האויב תוקף חזרה
-            StartCoroutine(EnemyTurnRoutine());
-        }
-        else
-        {
-            Debug.Log("Victory! The enemy is defeated.");
+            if (enemyHealthSlider != null)
+            {
+                enemyHealthSlider.maxValue = _enemy.MaxHealth;
+                enemyHealthSlider.value = _enemy.Health;
+            }
+
+            if (uiController != null)
+            {
+                uiController.SetupBattle(_player, _enemy);
+                uiController.UpdateUI(_player, _enemy, startMessage);
+            }
+
+            if (!_combat.IsPlayerTurn)
+            {
+                StartCoroutine(EnemyRoutine());
+            }
         }
     }
-
-    // Coroutine שמאפשרת לנו לעצור את הזמן בלי לתקוע את המשחק
-    IEnumerator EnemyTurnRoutine()
+    public void ExecutePlayerTurn(int type)
     {
-        Debug.Log("Waiting for enemy turn...");
-        yield return new WaitForSeconds(turnDelay);
-
-        // האויב תוקף את אולי
-        Debug.Log(enemyStats.unitName + " attacks back!");
-        playerStats.TakeDamage(enemyStats.attackDamage);
-
-        if (playerStats.currentHealth > 0)
+        if (uiController.IsProcessing || !_combat.IsPlayerTurn)
         {
-            isPlayerTurn = true; // מחזירים את התור לשחקן רק בסיום
+            Debug.Log("It's not the player turn or the system is busy");
+            return;
         }
-        else
+
+        if (_combat == null || _player == null || _enemy == null) return;
+
+        // ביצוע תור השחקן
+        string result = _combat.PlayerTurn(_player, type);
+
+        // עדכון ה-UI
+        uiController.UpdateUI(_player, _enemy, result);
+
+        // בדיקה אם האויב מת
+        if (_enemy.Health <= 0)
         {
-            Debug.Log("Ollie has fainted...");
+            StartCoroutine(VictorySequence());
+            Debug.Log("Victory!");
+            return;
         }
+
+        // מעבר לתור האויב
+        StartCoroutine(EnemyRoutine());
+    }
+
+    IEnumerator EnemyRoutine()
+    {
+        while (uiController.IsProcessing)
+        {
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(0.6f);
+        // ביצוע תור האויב
+        string result = _combat.EnemyTurn(_player);
+        Debug.Log("Player Health after attack: " + _player.Health);
+        uiController.UpdateUI(_player, _enemy, result);
+
+        Debug.Log("Enemy turn complete.");
+    }
+    IEnumerator VictorySequence()
+    {
+        yield return new WaitUntil(() => !uiController.IsProcessing);
+        Debug.Log("The battle has ended");
+        // SceneManager.LoadScene("City");
     }
 }

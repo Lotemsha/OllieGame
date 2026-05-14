@@ -7325,6 +7325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBattleTrigger
   battleSceneName: Battle_Sandbox
   fadeAnimator: {fileID: 1566751062}
+  dataContainer: {fileID: 11400000, guid: effa15ab365574b429fbff07c7ff0b8d, type: 2}
 --- !u!61 &544587014
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7380,15 +7381,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 544587011}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7450a3c3422224241b24dc5fbe301528, type: 3}
+  m_Script: {fileID: 11500000, guid: 67e158ece274bdb4488b5c3e6c344ebb, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyDataContainer
-  id: 1
-  enemyName: Post_Office
-  health: 100
-  speed: 5
-  damage: 10
-  xpReward: 10
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
+  dataContainer: {fileID: 11400000, guid: effa15ab365574b429fbff07c7ff0b8d, type: 2}
 --- !u!114 &553063525 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5767294681015409120, guid: 5db5ed44481bc94498f46a5a3527cf76, type: 3}
@@ -8296,9 +8292,17 @@ PrefabInstance:
       value: 1420296135
       objectReference: {fileID: 0}
     - target: {fileID: 3201016983128156435, guid: 4d3a3c89afecd254b994fd7308e2457d, type: 3}
+      propertyPath: baseSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3201016983128156435, guid: 4d3a3c89afecd254b994fd7308e2457d, type: 3}
       propertyPath: _healthSlider
       value: 
       objectReference: {fileID: 414792923}
+    - target: {fileID: 3201016983128156435, guid: 4d3a3c89afecd254b994fd7308e2457d, type: 3}
+      propertyPath: minAllowedSpeed
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 3201016983128156435, guid: 4d3a3c89afecd254b994fd7308e2457d, type: 3}
       propertyPath: _speedMultiplier
       value: 0.5

@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using CoreClasses.Models;
 
-public class EnemyDataContainer : MonoBehaviour
+[CreateAssetMenu(fileName = "NewEnemyData", menuName = "Combat/Enemy Data")]
+public class EnemyDataContainer : ScriptableObject
 {
-    // המשתנה הזה יחזיק את האובייקט האמיתי מה-DLL
     public Enemy myEnemyData;
 
     [Header("Enemy Settings")]
@@ -13,9 +13,11 @@ public class EnemyDataContainer : MonoBehaviour
     public float speed;
     public int damage;
     public int xpReward;
-
-    void Awake()
+    public EnemyType type;
+    public float baseAccuracy;
+   
+    public Enemy CreateInstance()
     {
-        myEnemyData = new Enemy(id, enemyName, health, speed, damage, xpReward);
+        return new Enemy(id, enemyName, health, speed, damage, xpReward, type, baseAccuracy);
     }
 }

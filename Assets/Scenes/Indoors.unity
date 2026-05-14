@@ -391,8 +391,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3201016983128156435, guid: 4d3a3c89afecd254b994fd7308e2457d, type: 3}
+      propertyPath: baseSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3201016983128156435, guid: 4d3a3c89afecd254b994fd7308e2457d, type: 3}
       propertyPath: _drainRate
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3201016983128156435, guid: 4d3a3c89afecd254b994fd7308e2457d, type: 3}
+      propertyPath: minAllowedSpeed
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5398126017795175318, guid: 4d3a3c89afecd254b994fd7308e2457d, type: 3}
       propertyPath: m_Name

@@ -12,37 +12,39 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
 
     [Header("State")]
-    public bool isInside = false; // האם אולי בתוך הבית?
+    public bool isInside = false;
 
-    [SerializeField] private float _speedMultiplier = 0.5f;
+    [Header("Movement Settings")]
+    [Tooltip("מהירות הבסיס ביוניטי - משפיעה על התחושה הפיזית")]
+    public float baseSpeed = 2f;
+    [Tooltip("מהירות מינימלית כדי שאולי לא תיתקע במקום")]
+    public float minAllowedSpeed = 0.8f;
+
     [SerializeField] private Slider _healthSlider;
-    [SerializeField] private float _drainRate = 1.0f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // משתנה עזר לשמירת המהירות שחושבה ב-Update לשימוש ב-FixedUpdate
+    private float _finalCalculatedSpeed;
+
     void Start()
     {
-        _playerLogic = new PlayerManager("Ollie");
-        Debug.Log("Character initialized: " + _playerLogic.Name + " with " + _playerLogic.Health + " HP");
-        _animator = GetComponent<Animator>();
-
+        // התחברות לשחקן הקיים ב-DLL או יצירת חדש
         if (GameController.Instance != null && GameController.Instance.gameManager.Player != null)
         {
-            // אנחנו לוקחים את השחקן הקיים ולא יוצרים חדש!
             _playerLogic = GameController.Instance.gameManager.Player;
-            Debug.Log("Connected to existing Ollie from DLL! Current Health: " + _playerLogic.Health);
+            Debug.Log("Connected to Ollie from DLL! HP: " + _playerLogic.Health);
         }
         else
         {
-            // רק אם אין שחקן (תחילת המשחק), יוצרים אחד ושומרים אותו ב-DLL
             _playerLogic = new PlayerManager("Ollie");
-            if (GameController.Instance != null)
-            {
-                GameController.Instance.gameManager.Player = _playerLogic;
-            }
-            Debug.Log("New Ollie created and stored in DLL.");
+            if (GameController.Instance != null) GameController.Instance.gameManager.Player = _playerLogic;
         }
 
-        // Blinking animation
+        _animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+
+        // אתחול גבולות המהירות בתוך ה-DLL לפי מה שהגדרת ביוניטי
+        _playerLogic.SpeedLimit(minAllowedSpeed, 20f);
+
         Invoke("RandomBlink", Random.Range(2f, 6f));
 
         if (_healthSlider != null)
@@ -52,88 +54,81 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void OnMove(InputValue value)
-    {
-        _moveDirection = value.Get<Vector2>();
-    }
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void FixedUpdate() // עדיף להעביר את התנועה הפיזיקלית לכאן
+    public void OnMove(InputValue value)
     {
-        if (canMove)
-        {
-            // חישוב המהירות
-            Vector2 targetVelocity = _moveDirection * (_playerLogic.Speed * _speedMultiplier);
+        _moveDirection = value.Get<Vector2>();
+    }
 
-            // הזזה דרך ה-Rigidbody - זה מה שיגרום לה להיעצר בקירות!
-            rb.linearVelocity = targetVelocity;
+    void Update()
+    {
+        if (_playerLogic == null) return;
+
+        // קבלת המכפיל המאוחד מה-DLL (שכולל חרדה, בריאות וסביבה)
+        float dllMultiplier = _playerLogic.SpeedEffectMultiplier;
+
+        // חישוב המהירות הסופית ביחס ל-baseSpeed של יוניטי
+        _finalCalculatedSpeed = Mathf.Max(baseSpeed * dllMultiplier, minAllowedSpeed);
+
+        UpdateMovementAnimations();
+
+        if (isInside) HandleInsideState();
+        else if (_playerLogic.IsAlive) HandleOutsideState();
+
+        if (!_playerLogic.IsAlive && canMove)
+        {
+            canMove = false;
+            rb.linearVelocity = Vector2.zero;
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (canMove && _moveDirection != Vector2.zero)
+        {
+            // 3. שימוש במהירות המדויקת שחושבה ב-Update
+            rb.linearVelocity = _moveDirection * _finalCalculatedSpeed;
         }
         else
         {
             rb.linearVelocity = Vector2.zero;
         }
     }
-
-    // Update is called once per frame
-    void Update()
+    private void HandleOutsideState()
     {
-        if (canMove)
-        {
-            // תנועה ואנימציות
-            Vector3 movement = new Vector3(_moveDirection.x, _moveDirection.y, 0);
-            float currentSpeed = _moveDirection.magnitude;
-            _animator.SetFloat("Speed", currentSpeed);
+        if (_healthSlider == null) return;
+        _healthSlider.gameObject.SetActive(true);
+        _playerLogic.EnergyDrain(Time.deltaTime);
+        _healthSlider.value = _playerLogic.Health;
+    }
 
-            if (currentSpeed > 0f)
-            {
-                _animator.SetFloat("moveX", _moveDirection.x);
-                _animator.SetFloat("moveY", _moveDirection.y);
-            }
-        }
+    private void HandleInsideState()
+    {
+        if (_healthSlider != null && _healthSlider.gameObject.activeSelf)
+            _healthSlider.gameObject.SetActive(false);
+        _playerLogic.ApplyEnvironmentEffect(EnvironmentType.Home, Time.deltaTime);
+    }
 
-        //   בר החיים 
-        if (_playerLogic != null && _playerLogic.Health > 0f && !isInside)
-        {
-            // אם היא בחוץ - ודאי שהבר מוצג
-            if (_healthSlider != null && !_healthSlider.gameObject.activeSelf)
-                _healthSlider.gameObject.SetActive(true);
+    private void UpdateMovementAnimations()
+    {
+        if (!canMove) return;
+        float speedMagnitude = _moveDirection.magnitude;
+        _animator.SetFloat("Speed", speedMagnitude);
 
-            float damage = _drainRate * Time.deltaTime;
-            _playerLogic.Health -= damage;
-
-            if (_healthSlider != null)
-            {
-                _healthSlider.value = _playerLogic.Health;
-            }
-        }
-        else if (isInside) // אם היא בפנים
+        if (speedMagnitude > 0f)
         {
-            // אם הבר עדיין דולק - כבי אותו
-            if (_healthSlider != null && _healthSlider.gameObject.activeSelf)
-                _healthSlider.gameObject.SetActive(false);
-        }
-        else if (_playerLogic.Health <= 0f)
-        {
-            Debug.Log("Ollie is exhausted!");
+            _animator.SetFloat("moveX", _moveDirection.x);
+            _animator.SetFloat("moveY", _moveDirection.y);
         }
     }
+
     void RandomBlink()
     {
         _animator.SetTrigger("doBlink");
-
-        // קורא לעצמו שוב כדי ליצור לופ אינסופי של זמנים משתנים
         Invoke("RandomBlink", Random.Range(3f, 8f));
-    }
-
-    public void ForceLookDirection(float x, float y)
-    {
-        if (_animator != null)
-        {
-            _animator.SetFloat("moveX", x);
-            _animator.SetFloat("moveY", y);
-        }
     }
 }

@@ -1,4 +1,4 @@
-﻿using System.Collections; // חובה בשביל ה-Coroutine
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using CoreClasses.Models;
@@ -8,14 +8,13 @@ public class EnemyBattleTrigger : MonoBehaviour
     public string battleSceneName = "BattleScene";
     public Animator fadeAnimator;
 
+    public EnemyDataContainer dataContainer;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            // שומרים את המיקום הנוכחי של אולי
             PlayerLocationManager.nextSpawnPoint = other.transform.position;
-
-            // מפעילים את רצף המעבר
             StartCoroutine(StartBattleSequence(other.gameObject));
         }
     }
@@ -24,15 +23,21 @@ public class EnemyBattleTrigger : MonoBehaviour
     {
         player.GetComponent<PlayerController>().canMove = false;
 
-        // הגנה: בודקים שה-Instance וה-GameManager קיימים
         if (GameController.Instance != null && GameController.Instance.gameManager != null)
         {
-            Enemy currentEnemyData = GetComponent<EnemyDataContainer>().myEnemyData;
-            GameController.Instance.gameManager.EnterCombat(currentEnemyData);
+            if (dataContainer != null)
+            {
+                Enemy currentEnemyData = dataContainer.CreateInstance();
+                GameController.Instance.gameManager.EnterCombat(currentEnemyData);
+            }
+            else
+            {
+                Debug.LogError("Missing Data Container on " + gameObject.name);
+            }
         }
         else
         {
-            Debug.LogError("GameController or GameManager is missing! check your CoreEngine object.");
+            Debug.LogError("GameController or GameManager is missing!");
         }
 
         if (fadeAnimator != null) fadeAnimator.SetTrigger("BattleFade");
@@ -40,5 +45,4 @@ public class EnemyBattleTrigger : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(battleSceneName);
     }
-
 }
