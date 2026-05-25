@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 29f808a5878d4654bbe3aff446322ba3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1601477578674268085
+    second: buildinggreenorange_0
+  - first:
+      213: -4951942164100950969
+    second: buildinggreenorange_1
+  - first:
+      213: -7913786306503683174
+    second: buildinggreenorange_2
+  - first:
+      213: -1901642861557749018
+    second: buildinggreenorange_3
+  - first:
+      213: -2583955442602250838
+    second: buildinggreenorange_4
+  - first:
+      213: 514720458354701753
+    second: buildinggreenorange_5
+  - first:
+      213: 2508644510630400582
+    second: buildinggreenorange_6
+  - first:
+      213: 7425706773171800085
+    second: buildinggreenorange_7
+  - first:
+      213: -5198572359653587128
+    second: buildinggreenorange_8
+  - first:
+      213: 7424250329210646477
+    second: buildinggreenorange_9
+  - first:
+      213: 4084039977474138314
+    second: buildinggreenorange_10
+  - first:
+      213: -4141462515053909724
+    second: buildinggreenorange_11
+  - first:
+      213: 5732497670238094306
+    second: buildinggreenorange_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: buildinggreenorange_0
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 209
+        width: 122
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b7e1a07f57993610800000000000000
+      internalID: 1601477578674268085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildinggreenorange_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 209
+        width: 67
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 744db7896da274bb0800000000000000
+      internalID: -4951942164100950969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildinggreenorange_2
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 210
+        width: 67
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a935f7488459c2290800000000000000
+      internalID: -7913786306503683174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildinggreenorange_3
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 210
+        width: 67
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea613b84e10c95e0800000000000000
+      internalID: -1901642861557749018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildinggreenorange_4
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 210
+        width: 67
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad61402732f32cd0800000000000000
+      internalID: -2583955442602250838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildinggreenorange_5
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 210
+        width: 67
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b5bbde9787a42700800000000000000
+      internalID: 514720458354701753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildinggreenorange_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 17
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642dbdb14ee70d220800000000000000
+      internalID: 2508644510630400582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildinggreenorange_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1
+        width: 67
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5180e1597f86d0760800000000000000
+      internalID: 7425706773171800085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildinggreenorange_8
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1
+        width: 67
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8470fab6bf5fad7b0800000000000000
+      internalID: -5198572359653587128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildinggreenorange_9
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 2
+        width: 67
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf6d2cc65c380760800000000000000
+      internalID: 7424250329210646477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildinggreenorange_10
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 2
+        width: 67
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac027d9a8bc6da830800000000000000
+      internalID: 4084039977474138314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildinggreenorange_11
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 2
+        width: 67
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429ad93f8c19686c0800000000000000
+      internalID: -4141462515053909724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildinggreenorange_12
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 2
+        width: 67
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3cb4e424ced8f40800000000000000
+      internalID: 5732497670238094306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      buildinggreenorange_0: 1601477578674268085
+      buildinggreenorange_1: -4951942164100950969
+      buildinggreenorange_10: 4084039977474138314
+      buildinggreenorange_11: -4141462515053909724
+      buildinggreenorange_12: 5732497670238094306
+      buildinggreenorange_2: -7913786306503683174
+      buildinggreenorange_3: -1901642861557749018
+      buildinggreenorange_4: -2583955442602250838
+      buildinggreenorange_5: 514720458354701753
+      buildinggreenorange_6: 2508644510630400582
+      buildinggreenorange_7: 7425706773171800085
+      buildinggreenorange_8: -5198572359653587128
+      buildinggreenorange_9: 7424250329210646477
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

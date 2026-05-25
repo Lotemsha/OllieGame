@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: -5356574185940491189
     second: Wall_0
+  - first:
+      213: 7088962694465329434
+    second: Wall_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -104,7 +107,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 73
         width: 68
         height: 21
       alignment: 0
@@ -117,6 +120,28 @@ TextureImporter:
       bones: []
       spriteID: b446df18820a9a5b0800000000000000
       internalID: -5356574185940491189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2
+        width: 16
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a191a9df20e016260800000000000000
+      internalID: 7088962694465329434
       vertices: []
       indices: 
       edges: []
@@ -136,6 +161,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Wall_0: -5356574185940491189
+      Wall_1: 7088962694465329434
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
