@@ -1,5 +1,6 @@
 ﻿using CoreClasses.Models;
 using System.Collections;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,6 +26,9 @@ public class GameController : MonoBehaviour
             DatabaseManager.SetSavePath(Application.persistentDataPath);
             gameManager = new GameManager();
             gameManager.NewGame("Ollie");
+
+            string json = File.ReadAllText(Application.streamingAssetsPath + "/items.json");
+            ItemDatabase.Initialize(json);
 
             Debug.Log("GameManager initialized and Player created!");
         }
@@ -119,9 +123,18 @@ public class GameController : MonoBehaviour
         }
     }
 
-    // לפיתוח
     private void Update ()
     {
+       // לפתיחת התיק
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            var inventoryUI = FindObjectOfType<InventoryUI>(true);
+            if (inventoryUI.gameObject.activeSelf)
+                inventoryUI.Close();
+            else
+                inventoryUI.Open();
+        }
+        // לפיתוח
         if (Input.GetKeyDown(KeyCode.E))
         {
             int cheatXP = 50;

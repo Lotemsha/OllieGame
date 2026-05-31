@@ -1,4 +1,6 @@
 ﻿using CoreClasses.Models;
+using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,11 +12,27 @@ public class InventoryUI : MonoBehaviour
 
     private PlayerManager _player;
 
-    void Start()
+    void Awake()
     {
-        closeButton.onClick.AddListener(Close);
+        _player = GameController.Instance.player;
+        _player.Inventory.OnInventoryChanged += Refresh;
     }
+    void OnDestroy()
+    {
+        if (_player != null)
+            _player.Inventory.OnInventoryChanged -= Refresh;
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            if (gameObject.activeSelf)
+                Close();
+        }
 
+        if (Input.GetKeyDown(KeyCode.Escape) && gameObject.activeSelf)
+            Close();
+    }
     public void Open()
     {
         _player = GameController.Instance.player;
@@ -29,22 +47,60 @@ public class InventoryUI : MonoBehaviour
 
     void Refresh()
     {
-        // מוחק slots ישנים
         foreach (Transform child in itemGrid)
             Destroy(child.gameObject);
 
-        // יוצר slot חדש לכל פריט
-        foreach (var item in _player.Inventory.ItemsList)
+        var grouped = _player.Inventory.ItemsList
+            .GroupBy(i => i.ItemID)
+            .ToDictionary(g => g.Key, g => (item: g.First(), count: g.Count()));
+
+        // סדר הצגה
+        var order = new[]
         {
-            var slot = Instantiate(itemSlot, itemGrid);
-            slot.GetComponent<ItemSlotUI>().Setup(item, OnUseItem);
+        ItemType.Equipment,
+        ItemType.Consumable,
+        ItemType.EmotionalItem,
+        ItemType.QuestItem
+    };
+
+        foreach (var type in order)
+        {
+            var itemsOfType = grouped.Values
+                .Where(e => e.item.Type == type)
+                .ToList();
+
+            if (itemsOfType.Count == 0) continue;
+
+            // כותרת סקשן
+            var header = new GameObject("Header_" + type);
+            header.transform.SetParent(itemGrid, false);
+            var txt = header.AddComponent<TextMeshProUGUI>();
+            txt.text = GetSectionLabel(type);
+            txt.fontSize = 18;
+            txt.fontStyle = FontStyles.Bold;
+
+            // הפריטים עצמם
+            foreach (var entry in itemsOfType)
+            {
+                var slot = Instantiate(itemSlot, itemGrid);
+                slot.GetComponent<ItemSlotUI>().Setup(entry.item, entry.count, OnUseItem);
+            }
         }
     }
 
     void OnUseItem(Item item)
-    {
-        string result = _player.Inventory.UseItem(item.ItemID, _player);
-        Debug.Log(result);
-        Refresh();
-    }
+        {
+            string result = _player.Inventory.UseItem(item.ItemID, _player);
+            Debug.Log(result);
+            Refresh();
+        }
+
+        string GetSectionLabel(ItemType type) => type switch
+        {
+            ItemType.Equipment => "🎒Equipment",
+            ItemType.Consumable => "🧪Consumable Items",
+            //ItemType.EmotionalItem => "💜 פריטים רגשיים",
+            ItemType.QuestItem => "📜 Quest Items",
+            _ => type.ToString()
+        };
 }

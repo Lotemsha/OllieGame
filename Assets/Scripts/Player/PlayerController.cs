@@ -21,8 +21,6 @@ public class PlayerController : MonoBehaviour
     public float baseSpeed = 2f;
     [Tooltip("מהירות מינימלית כדי שאולי לא תיתקע במקום")]
     public float minAllowedSpeed = 0.8f;
-
-    //[SerializeField] private Slider _healthSlider;
     
     public AnxietySettings anxietySettings;
 

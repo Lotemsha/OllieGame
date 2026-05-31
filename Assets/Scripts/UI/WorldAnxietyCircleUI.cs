@@ -29,6 +29,7 @@ public class WorldAnxietyCircleUI : MonoBehaviour
         player = GameController.Instance.player;
         saturationController = FindObjectOfType<SaturationController>();
         Debug.Log("Found saturation controller? " + saturationController);
+        gameObject.SetActive(PlayerPrefs.GetInt("HasAnxietyClock", 0) == 1);
     }
 
     void Update()
@@ -39,6 +40,7 @@ public class WorldAnxietyCircleUI : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.X))
         {
             mode = (mode == DisplayMode.Anxiety) ? DisplayMode.XP : DisplayMode.Anxiety;
+            displayedPercent = -1f;
         }
 
         if (mode == DisplayMode.XP) 
@@ -87,6 +89,7 @@ public class WorldAnxietyCircleUI : MonoBehaviour
         else
         {
             // כשהערך יציב — מחזירים לגודל רגיל
+            valueText.text = $"{percent:0}%";
             valueText.transform.localScale = Vector3.one;
         }
 

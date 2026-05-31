@@ -1,19 +1,23 @@
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
+[RequireComponent(typeof(Volume))]
 public class GlobalVolume : MonoBehaviour
 {
-    public class GlobalVolumeKeeper : MonoBehaviour
-    {
-        void Awake()
-        {
-            var existing = FindObjectsOfType<GlobalVolumeKeeper>();
-            if (existing.Length > 1)
-            {
-                Destroy(gameObject);
-                return;
-            }
+    public static GlobalVolume Instance { get; private set; }
+    public Volume Volume { get; private set; }
 
-            DontDestroyOnLoad(gameObject);
+    void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
         }
+
+        Instance = this;
+        Volume = GetComponent<Volume>();
+        DontDestroyOnLoad(gameObject);
     }
 }

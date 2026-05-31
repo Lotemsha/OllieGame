@@ -6,7 +6,7 @@ using UnityEngine.Rendering.Universal; // חשוב עבור URP
 public class SaturationController : MonoBehaviour
 {
     public Volume globalVolume;
-    public int maxXPForFullSaturation = 2000;
+    public int maxXPForFullSaturation = 3000;
 
     private ColorAdjustments colorAdjustments;
     private PlayerManager player;
@@ -14,21 +14,31 @@ public class SaturationController : MonoBehaviour
     void Start()
     {
         player = GameController.Instance.player;
-
-        if (globalVolume.profile.TryGet(out colorAdjustments) == false)
-        {
-            Debug.LogError("No ColorAdjustments found in Volume!");
-        }
     }
 
-     void Update()
+    void Update()
     {
-        if (player == null || colorAdjustments == null) return;
+        if (player == null) return;
 
-        // אחוז XP מתוך הרמה הנוכחית
-        float xpPercent = (float)player.TotalXP / maxXPForFullSaturation;
+        // מנסה לאתחל אם עדיין לא הצליח
+        if (colorAdjustments == null)
+        {
+            TryInit();
+            return;
+        }
 
-        // שינוי סטורציה לפי XP
+        float xpPercent = Mathf.Clamp01((float)player.TotalXP / maxXPForFullSaturation);
         colorAdjustments.saturation.value = Mathf.Lerp(-90f, 0f, xpPercent);
+    }
+
+    void TryInit()
+    {
+        if (GlobalVolume.Instance == null) return;
+
+        if (GlobalVolume.Instance.Volume.profile.TryGet(out colorAdjustments))
+        {
+            colorAdjustments.saturation.overrideState = true;
+            Debug.Log("ColorAdjustments initialized successfully");
+        }
     }
 }

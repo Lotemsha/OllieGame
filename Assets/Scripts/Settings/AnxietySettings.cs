@@ -6,14 +6,14 @@ public class AnxietySettings : ScriptableObject
     [Header("Balance Speeds")]
     public float homeBalanceSpeed = 1f;
     public float calmBalanceSpeed = 0.5f;
-    public float parkBalanceSpeed = 0.5f;
+    public float parkBalanceSpeed = 1.5f;
     public float coffeeShopBalanceSpeed = 0.5f;
 
     [Header("Anxiety Increase")]
-    public float busyStreetIncrease = 1.5f;
+    public float busyStreetIncrease = 1.0f;
     public float superIncrease = 1.5f;
     public float darkAlleyIncrease = 2f;
-    public float academicBuildingIncrease = 2.5f;
+    public float academicBuildingIncrease = 1.5f;
 
     [Header("Anxiety Decrease")]
     public float crowdedSeaDecrease = 1f;

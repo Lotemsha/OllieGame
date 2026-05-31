@@ -3,48 +3,92 @@
   "WorkspaceRootPath": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|c:\\users\\lotem\\documents\\gaming\\olliegame\\assets\\scripts\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|c:\\users\\lotem\\documents\\gaming\\olliegame\\assets\\scripts\\enemeis\\exitbattletrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemeis\\exitbattletrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\enemeis\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemeis\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\enemybattletrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemybattletrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|c:\\users\\lotem\\documents\\gaming\\olliegame\\assets\\scripts\\enemeis\\enemybattletrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemeis\\enemybattletrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\battleuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battleuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\settings\\npcdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\settings\\npcdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\npc\u0027s\\npccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npc\u0027s\\npccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\ui\\worldanxietycircleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\worldanxietycircleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\enemydatacontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemydatacontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\environment\\sceneteleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\environment\\sceneteleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\sceneteleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sceneteleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\npc\u0027s\\npcdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npc\u0027s\\npcdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\npccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Doors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Doors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\environment\\globalvolume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\environment\\globalvolume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\environment\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\environment\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\environment\\saturationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\environment\\saturationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\ui\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\ui\\itemslotui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\itemslotui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\inventory\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\settings\\anxietysettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\settings\\anxietysettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\npc\u0027s\\npcinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npc\u0027s\\npcinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\environment\\anxietyzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\environment\\anxietyzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\ui\\bagbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\bagbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\npc\u0027s\\npcpostbatlledialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npc\u0027s\\npcpostbatlledialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\assets\\scripts\\ui\\dialogueui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5336D676-650C-D1F0-7F26-49B2EA8605A8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\dialogueui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,135 +114,273 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GameController.cs",
-              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\GameController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameController.cs",
-              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\GameController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T13:13:43.581Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BattleManager.cs",
-              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\BattleManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BattleManager.cs",
-              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\BattleManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BattleManager.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAiwCoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T09:13:16.874Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EnemyController.cs",
-              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\EnemyController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyController.cs",
-              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\EnemyController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EnemyController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBoAAAAAAAAAAAAAAA==",
+              "Title": "ExitBattleTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Enemeis\\ExitBattleTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemeis\\ExitBattleTrigger.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Enemeis\\ExitBattleTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemeis\\ExitBattleTrigger.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T09:09:56.369Z",
+              "WhenOpened": "2026-05-28T12:22:17.055Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EnemyDataContainer.cs",
-              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\EnemyDataContainer.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyDataContainer.cs",
-              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\EnemyDataContainer.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EnemyDataContainer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABJAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "BattleManager.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Enemeis\\BattleManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemeis\\BattleManager.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Enemeis\\BattleManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemeis\\BattleManager.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAADgv4sAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T11:50:10.126Z"
+              "WhenOpened": "2026-05-21T11:44:17.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WorldAnxietyCircleUI.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\UI\\WorldAnxietyCircleUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\WorldAnxietyCircleUI.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\UI\\WorldAnxietyCircleUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\WorldAnxietyCircleUI.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwB8AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T11:33:52.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NPCController.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\NPC\u0027s\\NPCController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NPC\u0027s\\NPCController.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\NPC\u0027s\\NPCController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NPC\u0027s\\NPCController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T10:34:20.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NPCData.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Settings\\NPCData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Settings\\NPCData.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Settings\\NPCData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Settings\\NPCData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T09:24:09.459Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "EnemyBattleTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\EnemyBattleTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyBattleTrigger.cs",
-              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\EnemyBattleTrigger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EnemyBattleTrigger.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAgwAoAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Enemeis\\EnemyBattleTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemeis\\EnemyBattleTrigger.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Enemeis\\EnemyBattleTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemeis\\EnemyBattleTrigger.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAhwFgAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T12:01:52.78Z"
+              "WhenOpened": "2026-05-28T11:37:39.627Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAmwEoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T13:29:20.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BattleUIController.cs",
-              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\BattleUIController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BattleUIController.cs",
-              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\BattleUIController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BattleUIController.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAmwGIAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T13:45:26.441Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "SceneTeleport.cs",
-              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\SceneTeleport.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneTeleport.cs",
-              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\SceneTeleport.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SceneTeleport.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBwAAAAuAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Environment\\SceneTeleport.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Environment\\SceneTeleport.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Environment\\SceneTeleport.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Environment\\SceneTeleport.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwB0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T16:28:09.961Z"
+              "WhenOpened": "2026-05-24T11:00:15.812Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Doors.cs",
-              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Doors.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Doors.cs",
-              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Doors.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Doors.cs",
+              "DocumentIndex": 11,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Environment\\GameController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Environment\\GameController.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Environment\\GameController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Environment\\GameController.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAYwIIAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T16:08:29.973Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DialogueManager.cs",
-              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\DialogueManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DialogueManager.cs",
-              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\DialogueManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DialogueManager.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T09:17:13.506Z"
+              "WhenOpened": "2026-05-26T13:02:57.493Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "NPCController.cs",
-              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\NPCController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\NPCController.cs",
-              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\NPCController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\NPCController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T13:05:01.773Z"
+              "WhenOpened": "2026-05-22T08:02:57.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GlobalVolume.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Environment\\GlobalVolume.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Environment\\GlobalVolume.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Environment\\GlobalVolume.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Environment\\GlobalVolume.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T10:23:34.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UIController.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\UI\\UIController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIController.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\UI\\UIController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\UIController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T10:57:46.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NPCDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\NPC\u0027s\\NPCDatabase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NPC\u0027s\\NPCDatabase.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\NPC\u0027s\\NPCDatabase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NPC\u0027s\\NPCDatabase.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T11:39:47.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ItemSlotUI.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\UI\\ItemSlotUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ItemSlotUI.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\UI\\ItemSlotUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\ItemSlotUI.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T11:23:54.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "InventoryUI.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\UI\\InventoryUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\InventoryUI.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\UI\\InventoryUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\InventoryUI.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAwwAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T11:36:33.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SaturationController.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Environment\\SaturationController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Environment\\SaturationController.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Environment\\SaturationController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Environment\\SaturationController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T10:19:27.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NPCInteract.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\NPC\u0027s\\NPCInteract.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NPC\u0027s\\NPCInteract.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\NPC\u0027s\\NPCInteract.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NPC\u0027s\\NPCInteract.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T10:37:00.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ItemPickup.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Inventory\\ItemPickup.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\ItemPickup.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Inventory\\ItemPickup.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Inventory\\ItemPickup.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T12:25:32.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AnxietySettings.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Settings\\AnxietySettings.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Settings\\AnxietySettings.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Settings\\AnxietySettings.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Settings\\AnxietySettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T11:38:25.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DialogueUI.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\UI\\DialogueUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\DialogueUI.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\UI\\DialogueUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\DialogueUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T11:24:11.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AnxietyZone.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Environment\\AnxietyZone.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Environment\\AnxietyZone.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\Environment\\AnxietyZone.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Environment\\AnxietyZone.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T10:08:38.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BagButton.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\UI\\BagButton.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\BagButton.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\UI\\BagButton.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\BagButton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T11:40:40.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "NPCPostBatlleDialogue.cs",
+              "DocumentMoniker": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\NPC\u0027s\\NPCPostBatlleDialogue.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NPC\u0027s\\NPCPostBatlleDialogue.cs",
+              "ToolTip": "C:\\Users\\Lotem\\Documents\\Gaming\\OllieGame\\Assets\\Scripts\\NPC\u0027s\\NPCPostBatlleDialogue.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NPC\u0027s\\NPCPostBatlleDialogue.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBQwA0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T12:55:49.966Z"
             }
           ]
         }

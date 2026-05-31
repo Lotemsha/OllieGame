@@ -137,7 +137,15 @@ public class BattleManager : MonoBehaviour
         // סימון NPC כהובס — רק אם הקרב היה מול NPC
         if (PlayerLocationManager.lastEnemyNPCData != null)
         {
-            PlayerLocationManager.lastEnemyNPCData.isDefeated = true;
+            if (!PlayerLocationManager.lastEnemyNPCData.canBattleAgain)
+            {
+                PlayerLocationManager.lastEnemyNPCData.isDefeated = true;
+            }
+            if (PlayerLocationManager.lastEnemyNPCData.name == "Post Office")
+            {
+                PlayerPrefs.SetInt("HasAnxietyClock", 1);
+                PlayerPrefs.Save();
+            }
         }
 
         // XP

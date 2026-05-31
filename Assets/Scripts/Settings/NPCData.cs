@@ -18,7 +18,7 @@ public class NPCData : ScriptableObject
     [Header("State")]
     [Tooltip("האם אולי כבר ניצחה את ה-NPC הזה?")]
     public bool isDefeated = false;
-    public bool canBattleAgainOnLoss = false;
+    public bool canBattleAgain = false;
 
     [Header("Psychological Mechanics")]
     [Tooltip("כמה ה-NPC משנה את מד החרדה של אולי ברגע שמתחילים לדבר איתו")]

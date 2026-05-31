@@ -15,11 +15,14 @@ MonoBehaviour:
   npcName: Post Office
   npcSprite: {fileID: 0}
   animatorController: {fileID: 0}
-  postBattleDialogue: []
+  postBattleDialogue:
+  - 'Eliot: "Hi, i wanted to grant you this watch so you can track your progress
+    and stress."  '
+  - Push X button to chane views between your stress level and your XP.
   customBattleScene: GenericBattleScene
   isDefeated: 0
-  canBattleAgainOnLoss: 1
+  canBattleAgain: 0
   anxietyChangeOnInteract: 0
   triggersPanicAttack: 0
-  xpRewardOnResolution: 0
+  xpRewardOnResolution: 10
   givesQuest: 0

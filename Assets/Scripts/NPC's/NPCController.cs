@@ -13,6 +13,12 @@ public class NPCController : MonoBehaviour
         CharacterData = new NPC(gameObject.name);
         CharacterData.IsFriendly = false;
 
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (npcData != null && npcData.npcSprite != null)
+        {
+            sr.sprite = npcData.npcSprite;
+        }
+
         if (npcData != null && npcData.isDefeated) 
         {
             CharacterData.DialogueText = npcData.postBattleDialogue.ToString();

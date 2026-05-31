@@ -68,11 +68,11 @@ public class EnemyBattleTrigger : MonoBehaviour
         Enemy enemy = enemyPool.GetRandomEnemy().CreateEnemy();
         GameController.Instance.EnterCombat(enemy);
 
-        // ⭐ כיבוי כל ה-Canvas בעיר
+        // כיבוי כל ה-Canvas בעיר
         foreach (var c in FindObjectsOfType<Canvas>())
             c.enabled = false;
 
-        // ⭐ כיבוי כל DialogueUI בעיר
+        // כיבוי כל DialogueUI בעיר
         foreach (var ui in FindObjectsOfType<DialogueUI>())
         {
             ui.HideDialogue();
